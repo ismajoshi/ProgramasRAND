@@ -49,7 +49,7 @@ T Persona<T>::validarCedula(){
 	bool f =true;
 	do{
 	
-	cout<<"Ingrese por favor el numro de cedula de la persona"<<endl;
+	cout<<"Ingrese por favor el numero de cedula de la persona"<<endl;
 	cin>>_cedula;
 	if (verificarnumeros(_cedula)==true){
 		f=false;
@@ -61,6 +61,14 @@ T Persona<T>::validarCedula(){
 template <class T>
 bool Persona<T>::verificarnumeros(string c){
 	return c.find_first_not_of("0123456789") == std::string::npos;
+}
+template <class T>
+T Persona<T>::ingresarFecha(){
+	return 0;
+}
+template <class T>
+void Persona<T>::calcularedad(){
+	
 }
 
 
