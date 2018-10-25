@@ -19,7 +19,8 @@ int main(int argc, char** argv) {
 	//int mat[3][3],mat1[3][3],matR[3][3];
 	int **mat,**mat1,**matR;
 	int dat;
-	dat=atoi(ingresar("Ingrese tamanio de la matriz :"));
+	//dat=atoi(ingresar("Ingrese tamanio de la matriz :"));
+	dat=2;
 	mat=matriz(dat);
 	mat1=matriz(dat);
 	matR=matriz(dat);
