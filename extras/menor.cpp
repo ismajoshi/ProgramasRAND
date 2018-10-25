@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-=======
+
 //Extra 10 ejercicios punteros
->>>>>>> 990c47ad112e7bd304e245f8c50881c4205bf3cc
+
 #include <stdio.h>
 #include <iostream>
 
