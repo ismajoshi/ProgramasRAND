@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>	
-
+using namespace std;
 int **matriz(int);
 int **matriz(int t){
 	int **m,i;
@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 	int **mat,**mat1,**matR;
 	int dat;
 	//dat=atoi(ingresar("Ingrese tamanio de la matriz :"));
-	dat=2;
+	cin>>dat;
 	mat=matriz(dat);
 	mat1=matriz(dat);
 	matR=matriz(dat);

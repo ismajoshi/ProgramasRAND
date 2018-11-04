@@ -47,7 +47,7 @@ void multiplicarMatriz(int **mat1,int **mat2,int **matR,int t){
 		for(j=0;j<t;j++){
 			matR[i][j]=0;
 			for(h=0;h<t;h++){
-				matR[i][j]=matR[i][j]+(mat1[i][h]*mat2[h][j]);
+				*(*(matR+i)+j)=*(*(matR+i)+j)+(*(*(mat1+i)+j)* *(*(mat2+i)+j));
 			}		
 		}
 	}
