@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title> USO DE LAS TEMPLATES CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #1a1aff;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 400px; /* only for demonstration, should be removed */
+    background-color: #9BCCD4;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #80aaf;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2 align="center">Uso de Las Layouts HTML</h2>
+
+<header>
+  <h2>CAMPEONES DEL LOLSITO</h2>
+  <center><img src="league-of-legends-logo.png" height="100" width="300" align="center"></center>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Jax</a></li>
+      <li><a href="#TEEMO">Teemo</a></li>
+      <li><a href="#JANNA">Janna</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Jax</h1>
+    <center><img src="Jax_OriginalCentered.jpg" height="200" width="400" align="center" ></center>
+
+    <p align="justify">Inigualable tanto en sus habilidades de armamentos únicos como en su mordaz sarcasmo, Jax es el último maestro de armas conocido de Icathia. Después de que su tierra natal fue destruida por su propia arrogancia al desencadenar el Vacío, Jax y su especie juraron proteger lo poco que quedó. Mientras la magia aumenta en el mundo, la amenaza durmiente se agita una vez más, y Jax vaga por Valoran, portando la última luz de Icathia y poniendo a prueba a todos los guerreros que conoce para ver si son suficientemente fuertes para erguirse a su lado</p>
+
+  </article>
+  <section>
+    <nav></nav>
+    <article>
+    <br>
+    <h1 id="TEEMO">Teemo</h1>
+    <center><img src="Teemo_0.jpg" height="200" width="400" align="center"></center>
+
+    <p align="justify">Teemo no se inmuta ante los obstáculos más peligrosos y amenazadores mientras explora el mundo con un entusiasmo infinito y un espíritu lleno de alegría. Es un yordle con una moralidad inquebrantable que se enorgullece de seguir el código de los exploradores de Bandle, a veces con tanto ímpetu que no se percata de las consecuencias de sus acciones. Aunque algunos dicen que la existencia de los exploradores es cuestionable, algo es seguro: no hay que meterse con la convicción de Teemo.</p>
+  </article>
+  </section>
+  <section>
+    <nav></nav>
+    <article>
+    <br>
+    <br>
+    <h1 id="JANNA">Janna</h1>
+    <center><img src="Janna_OriginalCentered.jpg" height="200" width="400" align="center"></center>
+    <p align="justify">Janna es un poderoso y misterioso espíritu del viento que protege a los desvalidos de Zaun con la tempestad de Runaterra. Algunos creen que las súplicas de los marineros pidiendo vientos favorables mientras navegaban a través de las aguas traicioneras y las violentas tempestades dieron vida a Janna. Se convirtió en el símbolo de la esperanza de los necesitados, y su favor y protección alcanzan a todos hasta las profundidades de Zaun. Nadie sabe dónde o cuándo aparecerá, pero con frecuencia ella acude al llamado de ayuda.</p>
+  </article>
+  </section>
+
+</section>
+
+
+<footer>
+</footer>
+
+</body>
+</html>

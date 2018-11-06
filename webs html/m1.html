@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title> USO DE LAS TEMPLATES CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+}
+
+/* Style the header */
+header {
+    background-color: #FF5733;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    height: 400px; /* only for demonstration, should be removed */
+    background-color: #88F6F7;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+}
+
+article {
+    padding: 20px;
+    background-color: #E0EEAE;
+    height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #80aaf;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+
+<body>
+
+<h2>JOYCE</h2>
+
+
+
+<header>
+  <h2>JOYCE</h2>
+</header>
+
+<section>
+  
+  
+  <article>
+    <center><h1>♥ JOYCE ♥</h1></center>
+    <center><img src="joyce.jpg" width="400" height="220"></center>
+    <p align="justify">De apariencia un poco flemática, Joyce es calma y reservada, a veces altiva y distante. Es seria y profunda, ciertamente, pero también tímida, honesta y concienzuda. Posee grandes cualidades morales. Paciente, estable, disciplinada, voluntariosa y equilibrada, Joyce es, sin embargo, una mujer inquieta, insegura. Duda de sus capacidades y tiende a replegarse sobre sí misma. Introvertida, no le teme a la soledad y siempre preferirá tener una relación única y privilegiada que varias, menos auténticas. Está lejos de lo superficial y de la dispersión, y solo se apega verdaderamente a lo que es profundo y real. Si Ud. forma parte de sus amigos, es porque ella ha juzgado que es digno de serlo. Poco espontánea y demostrativa es, sin embargo, hipersensible y emotiva, pero se esconde detrás de una fachada de frialdad. Tiene un gran control de sí misma, a menudo interpretada como insensibilidad. Por eso, tiene la impresión de que realmente no la comprenden. Es orgullosa y no le gusta mostrar su vulnerabilidad. Preferirá actuar sola, antes que pedirles ayuda a los demás. Racional y pragmática, Joyce tiene los pies sobre la tierra, y se basa en la razón, la lógica. Trabajadora, es perfeccionista, ordenada, ahorrativa y seria. De niña, es demasiado calma, responsable, y puede ocurrir que se pliegue demasiado a los deseos o a la voluntad de sus padres. Tiene un gran sentido del deber, por lo cual sería inútil aplicar la autoridad o límites con ella, lo que produciría un efecto inhibidor en este temperamento de por sí bastante escrupuloso. Joyce guardará celosamente su jardín secreto, convendría respetarlo. Si bien puede ser una hermana mayor responsable, no le pida que se deje invadir por sus hermanos: ella cuida su dormitorio, sus libros, como las niñas de sus ojos.</p>
+  </article>
+</section>
+
+<footer>
+  <p>JOYCE_AI_LOVIU®</p>
+</footer>
+
+</body>
+</html>
