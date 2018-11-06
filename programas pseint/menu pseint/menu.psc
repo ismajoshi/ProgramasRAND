@@ -16,11 +16,11 @@ Proceso clase_1
 				Leer n;
 				t=0;
 				triangular=(t*(t+1))/2;
-				Mientras n > triangular
+				Mientras n > triangular Hacer
 					t=t+1;
 					triangular=(t*(t+1))/2;
 				FinMientras
-				si n=triangular
+				si n=triangular Entonces
 					Escribir "El numero es Triangular";
 				SiNo
 					Escribir "El numero no es triangular";
@@ -40,7 +40,7 @@ Proceso clase_1
 				ab=(((x2-x1)^2)+((y2-y1)^2));
 				ac=(((x3-x1)^2)+((y3-y1)^2));
 				ad=(((x4-x1)^2)+((y4-y1)^2));
-				si ab+ac=ad || ab+ad=ac || ad+ac=ab
+				si ab+ac=ad || ab+ad=ac || ad+ac=ab Entonces
 					Escribir " Los Puntos Forman un Rectangulo";
 				SiNo
 					Escribir " Los Puntos NO Forman un Rectangulo";
@@ -69,7 +69,7 @@ Proceso clase_1
 				k3= (1/r3);
 				k4ma=k1+k2+k3+(2*rc((k1*k2)+(k2*k3)+(k1*k3)));
 				k4me=k1+k2+k3-(2*rc((k1*k2)+(k2*k3)+(k1*k3)));
-				si abs(1/k4ma)>abs(1/k4me)
+				si abs(1/k4ma)>abs(1/k4me)Entonces
 					Escribir "El radio del circulo mayor es de: ", abs(1/k4ma);
 					Escribir "El radio del circulo menor es de: ", abs(1/k4me);
 				SiNo
