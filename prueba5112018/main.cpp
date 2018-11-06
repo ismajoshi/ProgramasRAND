@@ -4,8 +4,17 @@
 #include <time.h>
 #include <conio.h>
 #include <cstdlib>
+#include <windows.h>
 using namespace std;
 bool verificar(int*,int,int);
+
+void gotoxy(int x, int y) { 
+    COORD pos = {x, y};
+    HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleCursorPosition(output, pos);
+}
+
+
 
 char *ingresar (char *msg){
 	printf("\n%s", msg);
@@ -19,6 +28,22 @@ char *ingresar (char *msg){
 	}
 	dato[i++]='\0';
 	return dato;
+}
+void ordenartabla(int **matriz, int t){
+	int max =(t*t)-1;
+ 	int n=1;
+	int tam=0;
+ 	for(int i=0;i<t;i++){
+ 		for(int j=0; j<t;j++){
+ 			if(i==(t-1) && j==(t-1)){
+ 			*(*(matriz+i)+j) = NULL;
+			 }else{
+ 			*(*(matriz+i)+j) = n;
+
+ 			n++;
+ 			}
+		 }
+	 }
 }
 
 int **tamMatriz(int t){
@@ -36,6 +61,7 @@ int *vector(int t){
 }
  void llenarMatriz(int **matriz, int t){
  	int max =(t*t)-1;
+ 	int n=1;
  	int *numeros, valor=rand() %max +1 , tam=0;
  	numeros=vector(max);
  	for(int i=0;i<t;i++){
@@ -54,17 +80,22 @@ int *vector(int t){
 	 }
  }
  void imprimirMatriz(int **matriz, int t){
+ 	char carac=178;
  	for(int i=0;i<t;i++){
  		for(int j=0; j<t;j++){
  			if(*(*(matriz+i)+j)==0){
- 				cout<<" \t";
+	
+ 				cout<<carac<<"\t";
 			 }else{
 			 	cout<<*(*(matriz+i)+j)<<"\t";
 			 }
  			
 		 }
 		 cout<<endl;
+		 
 	 }
+
+
  }
  bool verificar(int *vector, int valor,int tam){
  	for(int i=0; i<=tam;i++){
@@ -79,6 +110,24 @@ int *vector(int t){
  	temp=matriz[x1][y1];
  	matriz[x1][y1]=0;
  	matriz[x][y]=temp;
+ }
+ 
+ bool verificarJuego(int **matriz , int t){
+ 	int max=t-1;
+ 	int i,j;
+ 	int contador=1;
+ 	for (i=0;i<t;i++){
+ 		for(j=0;j<t;j++){
+
+ 			if(matriz[i][j]!=(contador)){
+ 				if(i!=max&&j!=max){
+ 					return false;
+				 }
+			 }
+			  contador++;
+		 }
+	 }
+	 return true;
  }
 
 
@@ -101,7 +150,7 @@ int main(int argc, char** argv) {
 	char flecha;
 	while((flecha=getch())!=27){
 		switch(flecha){
-			case 119:
+			case 72:
 				//cout<<"UP";
 				if((x-1)>=0){
 					cambiar(matriz,x,y,(x-1),y);
@@ -109,27 +158,44 @@ int main(int argc, char** argv) {
 				}
 				
 				break;
-			case 115:
+			case 80:
 				if((x+1)<=xmax){
 					cambiar(matriz,x,y,(x+1),y);
 					x=x+1;
 				}
 				//cout<<"DOWN";
 				break;
-			case 100:
+			case 77:
 				if((y+1)<=ymax ){
 					cambiar(matriz,x,y,x,(y+1));
 					y=y+1;
 				}
 				//cout<<"RIGHT";
 				break;
-			case 97:
+			case 75:
 				if((y-1)>=0){
 					cambiar(matriz,x,y,x,(y-1));
 					y=y-1;
 				}
-				cout<<"LEFT";
+				//cout<<"LEFT";
 				break;
+			case 13:
+				if(verificarJuego(matriz,num)==true){
+					cout<<endl;
+					cout<<"HAS COMPLETADO LA TABLA"<<endl;
+					system("pause");
+				}else{
+					cout<<endl;
+					cout<<"NO HAS COMPLETADO LA TABLA"<<endl;
+					system("pause");
+				}
+				break;
+			case 63:
+				ordenartabla(matriz,num);
+				x=xmax;
+				y=ymax;
+				break;
+				
 		}
 	system("cls");
 	imprimirMatriz(matriz,num);
