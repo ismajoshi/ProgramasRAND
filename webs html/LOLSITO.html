@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title> USO DE LAS TEMPLATES CSS</title>
+<title> HTML moreno ismael</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -13,25 +15,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
+	
+
+
 header {
-    background-color: #1a1aff;
+    background-image: linear-gradient(-180deg,#3377ff,rgba(255,0,0,0));
     padding: 30px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 35px;
     color: white;
+    width: 100%;
 }
 
-/* Create two columns/boxes that floats next to each other */
+
 nav {
+	background-image: linear-gradient(90deg,#9BCCD4,rgba(255,0,0,0));
     float: left;
-    width: 30%;
-    height: 400px; /* only for demonstration, should be removed */
-    background-color: #9BCCD4;
+    width: 20%;
+    height: 450px; 
     padding: 20px;
 }
 
-/* Style the list inside the menu */
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -40,20 +46,21 @@ nav ul {
 
 article {
     float: left;
-    padding: 20px;
-    width: 70%;
+    padding: 10px;
+   	width: 80%;
     background-color: #f1f1f1;
-    height: 400px; /* only for demonstration, should be removed */
-}
+    height: 450px;
+    border-style: solid;
 
-/* Clear floats after the columns */
+ }
+
+
 section:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Style the footer */
 footer {
     background-color: #80aaf;
     padding: 10px;
@@ -61,7 +68,6 @@ footer {
     color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
     nav, article {
         width: 100%;
@@ -70,27 +76,28 @@ footer {
 }
 </style>
 </head>
-<body>
+<body style="background-color: #f1f1f1">
 
-<h2 align="center">Uso de Las Layouts HTML</h2>
 
 <header>
-  <h2>CAMPEONES DEL LOLSITO</h2>
-  <center><img src="league-of-legends-logo.png" height="100" width="300" align="center"></center>
+  <h2>&#9829 CAMPEONES DEL LOLSITO &#9829 </h2>
+  <center><a href="https://lan.leagueoflegends.com/es/"><img src="league-of-legends-logo.png" height="100" width="300" align="center"></a></center>
 </header>
 
 <section>
   <nav>
+  	<h1>Campeones </h1>
     <ul>
       <li><a href="#">Jax</a></li>
       <li><a href="#TEEMO">Teemo</a></li>
       <li><a href="#JANNA">Janna</a></li>
+      <li><a href="#Mas_Campeones">Mas Campeones</a></li>
     </ul>
   </nav>
   
   <article>
     <h1>Jax</h1>
-    <center><img src="Jax_OriginalCentered.jpg" height="200" width="400" align="center" ></center>
+    <center><img src="Jax_OriginalCentered.jpg" height="200" width="400" align="center" style="border-radius: 80px;"></center>
 
     <p align="justify">Inigualable tanto en sus habilidades de armamentos únicos como en su mordaz sarcasmo, Jax es el último maestro de armas conocido de Icathia. Después de que su tierra natal fue destruida por su propia arrogancia al desencadenar el Vacío, Jax y su especie juraron proteger lo poco que quedó. Mientras la magia aumenta en el mundo, la amenaza durmiente se agita una vez más, y Jax vaga por Valoran, portando la última luz de Icathia y poniendo a prueba a todos los guerreros que conoce para ver si son suficientemente fuertes para erguirse a su lado</p>
 
@@ -100,7 +107,7 @@ footer {
     <article>
     <br>
     <h1 id="TEEMO">Teemo</h1>
-    <center><img src="Teemo_0.jpg" height="200" width="400" align="center"></center>
+    <center><img src="Teemo_0.jpg" height="200" width="400" align="center" style="border-radius: 80px;"></center>
 
     <p align="justify">Teemo no se inmuta ante los obstáculos más peligrosos y amenazadores mientras explora el mundo con un entusiasmo infinito y un espíritu lleno de alegría. Es un yordle con una moralidad inquebrantable que se enorgullece de seguir el código de los exploradores de Bandle, a veces con tanto ímpetu que no se percata de las consecuencias de sus acciones. Aunque algunos dicen que la existencia de los exploradores es cuestionable, algo es seguro: no hay que meterse con la convicción de Teemo.</p>
   </article>
@@ -111,8 +118,16 @@ footer {
     <br>
     <br>
     <h1 id="JANNA">Janna</h1>
-    <center><img src="Janna_OriginalCentered.jpg" height="200" width="400" align="center"></center>
+    <center><img src="Janna_OriginalCentered.jpg" height="200" width="400" align="center" style="border-radius: 80px;"></center>
     <p align="justify">Janna es un poderoso y misterioso espíritu del viento que protege a los desvalidos de Zaun con la tempestad de Runaterra. Algunos creen que las súplicas de los marineros pidiendo vientos favorables mientras navegaban a través de las aguas traicioneras y las violentas tempestades dieron vida a Janna. Se convirtió en el símbolo de la esperanza de los necesitados, y su favor y protección alcanzan a todos hasta las profundidades de Zaun. Nadie sabe dónde o cuándo aparecerá, pero con frecuencia ella acude al llamado de ayuda.</p>
+    <br>
+  </article>
+  </section>
+  <section>
+    <nav></nav>
+    <article>
+    <h1 id="Mas_Campeones">Mas Campeones</h1>
+    <iframe src="https://lan.leagueoflegends.com/es/game-info/champions/" height="350" scrolling="yes" style="border-style: solid; -ms-transform: scale(0.25);overflow: visible;width: 100%;" content="width=device-width, initial-scale=0.5"></iframe>>
   </article>
   </section>
 
