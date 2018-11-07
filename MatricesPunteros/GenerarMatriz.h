@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <time.h>
+
 void generarMatriz(int **,int);
 void imprimirMatriz(int **,int);
 void multiplicarMatriz(int **,int **,int **,int);
