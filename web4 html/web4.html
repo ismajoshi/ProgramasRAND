@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	p {
+font-family: 'Open Sans';
+font-size: 14px;
+color: #ccc;
+line-height: 18px;
+margin-bottom: 20px;
+}
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("fondo.jpg");
+    color: white;
+    top: 500%;
+  border: none;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: url("fondo.jpg"), rgba(0,0,0,1);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+header {
+    background-image: linear-gradient(180deg,#3377ff,rgba(255,0,0,0));
+    padding: 15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    width: 100%;
+}
+
+nav {
+	background-image: linear-gradient(90deg,#9BCCD4,#3377ff);
+    float: left;
+    width: 20%;
+    height: 100%; 
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+    background-image: linear-gradient(90deg,#9BCCD4,#FFFFFF);
+}
+
+article {
+    float: left;
+    padding: 10px;
+   	width: 80%;
+   	background-image: linear-gradient(-45deg,#40EC67,#FFFFFF);
+    height: 100%;
+    color: white;
+ }
+
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #80aaf;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 5px #FFFFFF;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+<head>
+	<title>WEB GRAFICOS y MEDIA</title>
+</head>
+<body>
+	<br>
+
+	<p style="font-size: 30px; text-align: center;">Imagenes Vectoriales</p>
+	<article ><img src="dog.svg" height="500px"></article>
+	<article><img src="dog.svg" height="200px"></article>
+	
+</body>
+<footer><br><br><h1>Video</h1>
+<video controls><source src="video.mp4" type="video/mp4"></video> <br>
+<audio controls> <source src="audio.mp3" type="audio/mp3"></audio></footer><br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/iG1o5xLqqcY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<footer>Ismael Moreno 2018</footer>
+</html>
