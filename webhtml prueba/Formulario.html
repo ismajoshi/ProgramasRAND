@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<title> Formularios en HTML</title>
+
+	<style type="text/css">
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		article {
+    		float: left;
+   			padding: 10px;
+   			width: 100%;
+   			height: 100%;
+   			background-image: linear-gradient(90deg,#9BCCD4,rgba(255,0,0,0));
+
+ 		}
+ 		form{
+ 			float: left;
+   			padding: 10px;
+   			width: 100%;
+   			background-image: linear-gradient(-90deg,#914ff4,rgba(255,0,0,0));
+   			border-style: solid;
+ 		}
+	</style>
+</head>
+<body>
+	<article>
+		<h1>Formularios en HTML</h1>
+
+		<form action="get.php" method="get">
+			<h3>Ingreso De Datos Personales</h3>
+			<br>
+			Nombre:<br>
+  <input type="text" name="nombre">
+  <br>
+  Apellido:<br>
+  <input type="text" name="apellido">
+
+  <br>
+  Sexo:<br>
+  <input type="radio" name="genero" value="M" checked> Masculino<br>
+  <input type="radio" name="genero" value="F"> Femenino<br>
+
+
+  <br>
+  Año de nacimiento: <br>
+  <select name="mes" size="6" multiple>
+  <option value="enero">ENERO</option>
+  <option value="febrero">FEBRERO</option>
+  <option value="marzo">MARZO</option>
+  <option value="abril">ABRIL</option>
+  <option value="mayo">MAYO</option>
+  <option value="junio">JUNIO</option>
+  <option value="julio">JULIO</option>
+  <option value="agosto">AGOSTO</option>
+  <option value="septiembre">SEPTIEMBRE</option>
+  <option value="octubre">OCTUBRE</option>
+  <option value="noviembre">NOVIEMBRE</option>
+  <option value="diciembre">DICIEMBRE</option>
+</select>
+  <br>
+  Direccion: <br>
+  <textarea name="direccion" rows="10" cols="30">
+</textarea>
+<br>
+Email:<br>
+  <input type="text" name="email"><br>
+
+  <input type="submit" value="Confirmar">
+		</form>
+	</article>
+
+</body>
+</html>
