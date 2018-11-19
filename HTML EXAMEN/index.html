@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link rel="stylesheet" href="formato.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<title> Formularios en HTML</title>
+
+
+	<style type="text/css">
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+      background-image: url(fondo1.jpg); 
+		}
+		article {
+    		
+   			padding: 10px;
+   			width: 100%;
+   			height: 100%;
+   			background-image: linear-gradient(90deg,#C5614B,rgba(255,0,0,0));
+
+ 		}
+ 		form{
+ 			float: right;
+   			padding: 10px;
+   			width: 100%;
+   			background-image: linear-gradient(-90deg,#914ff4,rgba(255,0,0,0));
+   			border-style: solid;
+ 		}
+    header {
+    background-image: linear-gradient(-180deg,#3377ff,rgba(255,0,0,0));
+    padding: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    color: white;
+    width: 100%;
+}
+
+
+nav {
+  background-image: linear-gradient(90deg,#9BCCD4,rgba(255,0,0,0));
+    float: left;
+    width: 20%;
+    height: 450px; 
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+}
+
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #80aaf;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+aside {
+  background-image: linear-gradient(90deg,#9BCCD4,rgba(255,0,0,0));
+    float: right;
+    width: 20%;
+    height: 100%; 
+    padding: 20px;
+}
+	</style>
+</head>
+<body>
+   <div class="w3-card-4 w3-margin w3-white" style="width: 30%;">
+    <article>
+      <h1>Listas y Tablas</h1>
+
+      <table align="center" border="4">
+<tr>   
+<th> Estudiantes </th> 
+<th> Calificaciones </th>
+</tr>
+<tr>
+<td>Moreno</td>   
+<td>20 </td>   
+</tr>
+<tr>
+<td >Romero</td>   
+<td>15</td>   
+</tr>
+<tr>
+<td >Molina</td>   
+<td>15</td>   
+</tr>
+</table>
+    </article>
+    <div class="w3-card-4 w3-margin w3-white">
+      <h2>Lista</h2>
+      <ul>
+
+        <li><a href="https://es.wikipedia.org/wiki/Moreno">Moreno</a></li>
+        <li>Romero</li>
+        <li>Molina</li>
+      </ul>
+      <br>
+    </div>
+  </div>
+  <div class="w3-row" style="width: 60%;"><article>
+    <h1 style="width: 20%;">Formularios en HTML</h1>
+
+    <form action="get.php" method="get" style="width: 100%;">
+      <h3>Ingreso De Datos Personales</h3>
+      <br>
+      Nombre:<br>
+  <input type="text" name="nombre">
+  <br>
+  Apellido:<br>
+  <input type="text" name="apellido">
+
+  <br>
+  Sexo:<br>
+  <input type="radio" name="genero" value="M" checked> Masculino<br>
+  <input type="radio" name="genero" value="F"> Femenino<br>
+
+
+  
+  <br>
+  Direccion: <br>
+  <textarea name="direccion" rows="10" cols="30">
+</textarea>
+<br>
+Email:<br>
+  <input type="text" name="email"><br>
+
+  <input type="submit" value="Confirmar">
+    </form>
+  </article></div>
+
+  <div> <nav style="width: 100%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZrQD3HpHbIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></nav>
+  <aside>
+  <canvas id="myCanvas" width="170" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+ctx.font = "20px Arial";
+ctx.strokeText("CANVAS GRAFICO", 10, 50);
+</script></a><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br><br><br><br><br><br>
+</aside></div>
+
+ 
+	
+
+</body>
+</html>
