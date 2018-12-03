@@ -95,7 +95,6 @@ int *vector(int t){
 		 
 	 }
 
-
  }
  bool verificar(int *vector, int valor,int tam){
  	for(int i=0; i<=tam;i++){
